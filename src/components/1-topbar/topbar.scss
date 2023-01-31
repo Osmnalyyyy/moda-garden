@@ -1,0 +1,33 @@
+
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 203, 71);
+    align-items: center;
+    .contact{
+        display: flex;
+        margin: 1rem;
+        text-align: center;
+        justify-content: center;
+        li{
+            margin-right: 2rem;
+            font-size: 2rem;
+        }
+    }
+    .icons{
+        display: flex;
+        margin: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin-left: 2rem;
+            font-size: 2rem;
+            
+        }
+    }
+    li{
+        list-style: none;
+    }
+}
