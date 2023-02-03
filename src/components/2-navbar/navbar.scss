@@ -1,27 +1,26 @@
 .navbar{
-    display: flex;
-    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+  
+}
+
+.menu{
+   display: flex;
+   justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
-   
-    ul{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        
-        li{
-            list-style-type: none;
-            margin: 1rem;
-            font-size: 1.3rem;
-        }
-        a{
-            text-decoration: none;
-        }
+
+    li{
+        list-style-type: none;
+        margin: 2rem;
+        font-size: 2rem;
     }
 
-    .moda{
-        font-size: 2.5rem;
-        color: purple;
-    }
 
+
+    .gif{
+        width: 200px;
+        height:200px;
+        border-radius: 100px;
+    }
 }

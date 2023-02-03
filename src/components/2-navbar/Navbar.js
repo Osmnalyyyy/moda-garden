@@ -1,27 +1,20 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import "./navbar.scss";
+import gif from "./koyu kahve modern kahve dükkanı logosu.gif";
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <Container fluid className="navbar">
       <ul className="menu">
+        <li>Anasayfa</li>
+        <li>Menu</li>
         <li>
-          <a href="">Anasayfa</a>
+          <img src={gif} alt="" className="gif" />
         </li>
-        <li>
-          <a href="">Menu</a>
-        </li>
-
-        <ul className="moda">Moda Garden Cafe & Bistro</ul>
-        <ul>
-          <li>
-            <a href="">Hakkımızda</a>
-          </li>
-          <li>
-            <a href="">İletişim</a>
-          </li>
-        </ul>
+        <li>Hakkımızda</li>
+        <li>İletişim</li>
       </ul>
-    </div>
+    </Container>
   );
 };
 
