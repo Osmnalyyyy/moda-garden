@@ -6,16 +6,12 @@ import "./yorum.scss";
 const Yorumlar = () => {
   return (
     <Container className="text-center">
-      <Row className="m-0">
-        <Col className="col-4 yorum">
-          <Yorum />
-        </Col>
-        <Col className="col-4 yorum">
-          <Yorum />
-        </Col>
-        <Col className="col-4 yorum">
-          <Yorum />
-        </Col>
+      <Row className="m-0  yorum-grup">
+        {yorumlar.map((yorum) => (
+          <Col className="col-3 yorum">
+            <Yorum {...yorum} />
+          </Col>
+        ))}
       </Row>
     </Container>
   );

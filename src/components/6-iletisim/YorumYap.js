@@ -19,7 +19,7 @@ const YorumYap = () => {
     phoneNumber: Yup.number(),
     point: Yup.number()
       .max(10, "En fazla 10 puan verebilirsiniz")
-      .min(0, "En düşük 0 puan verebilirsiniz")
+      .min(1, "En düşük 0 puan verebilirsiniz")
       .required("Lütfen puanınızı giriniz"),
     message: Yup.string()
       .max(100, "Mesajınız en fazla 100 karakter içerebilir")

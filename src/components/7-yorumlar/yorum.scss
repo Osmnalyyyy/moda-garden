@@ -1,5 +1,9 @@
-.yorum {
-  margin: 1rem;
-  padding: 10px;
-  width: 25%;
+.yorum-grup {
+  justify-content: space-around;
+
+  .yorum {
+    margin: 1rem;
+    padding: 10px;
+    width: 20%;
+  }
 }
