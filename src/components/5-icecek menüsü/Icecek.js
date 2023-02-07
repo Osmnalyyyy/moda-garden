@@ -5,27 +5,30 @@ import soguk from "./sogukicecek.json";
 import sicak from "./sicakicecek.json";
 const Icecek = () => {
   return (
-    <Container className="icecek">
+    <Container fluid className="icecek">
       <h2>İçecek menümüze hoşgeldiniz</h2>
 
-      <Row className="s">
-        <h3>Sıcak içecek menüsü</h3>
-        {sicak.map((item) => (
-          <Col className="col-3 mt-2 saka">{item}</Col>
-        ))}
+      <Row>
+        <Row className="col-6 s">
+          <h3>Sıcak içecek menüsü</h3>
+          {sicak.map((item) => (
+            <Col className="col-6 mt-2 mr-1 saka">{item}</Col>
+          ))}
+        </Row>
+        <Row className="col-6 s">
+          <h3>Soğuk içecek menüsü</h3>
+          {soguk.map((item) => (
+            <Col
+              className="col-6 mt-2 mr-1 saka"
+              //  style={{ border: "2px dotted red", margim: "1rem" }}
+            >
+              {item}
+            </Col>
+          ))}
+        </Row>
       </Row>
 
-      <Row className="s">
-        <h3>Soğuk içecek menüsü</h3>
-        {soguk.map((item) => (
-          <Col
-            className="col-3 mt-2 saka"
-            //  style={{ border: "2px dotted red", margim: "1rem" }}
-          >
-            {item}
-          </Col>
-        ))}
-      </Row>
+      <Row className="s"></Row>
     </Container>
   );
 };

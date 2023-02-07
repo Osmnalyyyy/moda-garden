@@ -1,40 +1,33 @@
+.icecek {
+  &::after {
+    background-image: url("https://images.pexels.com/photos/357577/pexels-photo-357577.jpeg?auto=compress&cs=tinysrgb&w=600");
+    opacity: 0.1;
+    background-repeat: no-repeat;
+  }
 
-
-.icecek{
-   
-       &::after {
-        background-image: url("https://images.pexels.com/photos/357577/pexels-photo-357577.jpeg?auto=compress&cs=tinysrgb&w=600");
-        opacity: 0.1;
-        background-repeat: no-repeat;
-    }
-    
-
-    h2{
+  h2 {
     text-align: center;
     margin: 3rem;
     font-size: 2.5rem;
+  }
+  h3 {
+    text-align: center;
+    margin: 3rem;
+    font-size: 2rem;
+    color: burlywood;
+  }
+
+  .s {
+    margin: 0 auto;
+    justify-content: space-around;
+
+    .saka {
+      border: 2px double rgb(205, 224, 120);
+      color: violet;
+      margin: 1rem;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 5px 5px 10px aqua;
     }
-    h3{
-        text-align: center;
-        margin: 3rem;
-        font-size: 2rem;
-        color: burlywood;
-    }
-
-
-    .s{
-        margin: 0 auto;
-        justify-content: space-around;
-
-      .saka{
-        border: 2px double rgb(205, 224, 120);
-        color: violet;
-        margin: 1rem;
-        text-align: center;
-        padding: 1rem;
-        box-shadow: 5px 5px 10px aqua;
-    }  
-    }
-    
-
+  }
 }
