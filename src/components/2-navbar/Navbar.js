@@ -4,17 +4,33 @@ import "./navbar.scss";
 import gif from "./koyu kahve modern kahve dükkanı logosu.gif";
 const Navbar = () => {
   return (
-    <Container fluid className="navbar">
-      <ul className="menu">
-        <li>Anasayfa</li>
-        <li>Menu</li>
-        <li>
-          <img src={gif} alt="" className="gif" />
-        </li>
-        <li>Hakkımızda</li>
-        <li>İletişim</li>
-      </ul>
-    </Container>
+    <>
+      <Container fluid className="navbar">
+        <ul className="menu">
+          <li>
+            <a href="">Anasayfa</a>
+          </li>
+          <li>
+            <a href="">Menu</a>
+          </li>
+        </ul>
+        <ul className="menu">
+          <li>
+            <a href="">Hakkımızda</a>
+          </li>
+          <li>
+            <a href="">İletişim</a>
+          </li>
+        </ul>
+      </Container>
+      <Container className="menu2">
+        <ul>
+          <li className="gif">
+            <img src={gif} />
+          </li>
+        </ul>
+      </Container>
+    </>
   );
 };
 
