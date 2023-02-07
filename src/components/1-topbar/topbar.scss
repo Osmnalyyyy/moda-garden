@@ -1,33 +1,35 @@
-
-
-.topbar{
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(243, 203, 71);
+  align-items: center;
+  .contact {
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(243, 203, 71);
+    margin: 1rem;
+    text-align: center;
+    justify-content: center;
+    li {
+      margin-right: 2rem;
+      font-size: 1rem;
+    }
+  }
+  .icons {
+    display: flex;
+    margin: 1rem;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    .contact{
-        display: flex;
-        margin: 1rem;
-        text-align: center;
-        justify-content: center;
-        li{
-            margin-right: 2rem;
-            font-size: 2rem;
-        }
+    li {
+      margin-left: 2rem;
+      font-size: 1rem;
+
+      &:hover {
+        cursor: pointer;
+        transform: rotate(180deg);
+      }
     }
-    .icons{
-        display: flex;
-        margin: 1rem;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        li{
-            margin-left: 2rem;
-            font-size: 2rem;
-            
-        }
-    }
-    li{
-        list-style: none;
-    }
+  }
+  li {
+    list-style: none;
+  }
 }
