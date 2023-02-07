@@ -11,13 +11,18 @@ const YorumYap = () => {
   const initialValues = {
     name: "",
     phoneNumber: "",
+    point: "",
     message: "",
   };
   const validationSchema = Yup.object({
     name: Yup.string(),
-    phoneNumber: Yup.string(),
+    phoneNumber: Yup.number(),
+    point: Yup.number()
+      .max(10, "En fazla 10 puan verebilirsiniz")
+      .min(0, "En düşük 0 puan verebilirsiniz")
+      .required("Lütfen puanınızı giriniz"),
     message: Yup.string()
-      .max(50, "Mesajınız en fazla 50 karakter içerebilir")
+      .max(100, "Mesajınız en fazla 100 karakter içerebilir")
       .min(5, "Mesajınız en az 5 karakter içerebilir")
       .required("lütfen yorumunuzu giriniz"),
   });
@@ -42,7 +47,7 @@ const YorumYap = () => {
   });
 
   return (
-    <Card>
+    <>
       <Form noValidate onSubmit={formik.handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>İsim Soyisim</Form.Label>
@@ -59,6 +64,14 @@ const YorumYap = () => {
             type="number"
             placeholder="Lütfen telefon numaranızı giriniz"
             {...formik.getFieldProps("phoneNumber")}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Puanınızı giriniz</Form.Label>
+          <Form.Control
+            type="number"
+            placeholder="Lütfen puanınızı giriniz"
+            {...formik.getFieldProps("point")}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -85,7 +98,7 @@ const YorumYap = () => {
           Gönder
         </Button>
       </Form>
-    </Card>
+    </>
   );
 };
 
