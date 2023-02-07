@@ -16,7 +16,7 @@ const Yorum = ({ name, point, message }) => {
     if (point % 1 !== 0) {
       arr.push(<BsStarHalf />);
     }
-    for (let i = arr.point; i <= 9; i++) {
+    for (let i = arr.length; i <= 9; i++) {
       arr.push(<BsStar />);
     }
   }
@@ -28,7 +28,10 @@ const Yorum = ({ name, point, message }) => {
           <Card.Title>{name}</Card.Title>
           <Card.Title>
             {arr.map((item, i) => (
-              <span style={{ fontSize: "70%" }} key={i}>
+              <span
+                style={{ fontSize: "70%", color: "rgb(240, 236, 18)" }}
+                key={i}
+              >
                 {item}
               </span>
             ))}
