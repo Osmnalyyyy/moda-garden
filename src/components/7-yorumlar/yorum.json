@@ -2,17 +2,17 @@
     {
         "name":"osman",
         "phoneNumber":"555555555",
-        "point":"3",
+        "point":"30",
         "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt nostrum accusantium beataeff"
     }, {
         "name":"osman",
         "phoneNumber":"555555555",
-        "point":"5.8",
+        "point":"-5.8",
         "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt nostrum accusantium beataeff"
     }, {
         "name":"osman",
         "phoneNumber":"555555555",
-        "point":"8.7",
+        "point":"-2",
         "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt nostrum accusantium beataeff"
     }, {
         "name":"osman",
@@ -32,7 +32,7 @@
     }, {
         "name":"osman",
         "phoneNumber":"555555555",
-        "point":"5",
+        "point":"15",
         "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt nostrum accusantium beataeff"
     }, {
         "name":"osman",

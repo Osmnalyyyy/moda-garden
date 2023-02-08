@@ -1,24 +1,28 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./carousel.scss";
+import resim from "./img.json";
 const CarouselBar = () => {
   return (
-    <Carousel className="text-center">
-      <Carousel.Item interval={3000}>
-        <img
-          className="d-block"
-          src="https://media.istockphoto.com/id/1275783703/tr/foto%C4%9Fraf/egirdir-kasabas%C4%B1-ve-g%C3%B6l%C3%BC.jpg?b=1&s=612x612&w=0&k=20&c=AHmhgQx-KEMSGEjCITbED5pKGJxuZA6wIg7hP84JOe4="
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={3000}>
+    <Carousel className="text-center slayt">
+      {resim.map((img) => (
+        <Carousel.Item interval={3000}>
+          <img
+            className="d-block"
+            src={require(`./img/${img.image}`)}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            {/* <h3>{img.baslik}</h3> */}
+            <p>{img.baslik}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
+
+      {/*  <Carousel.Item interval={3000}>
         <img
           className="d-block "
-          src="https://media.istockphoto.com/id/1403842742/tr/foto%C4%9Fraf/the-historic-part-of-e%C4%9Firdir-and-the-mountains-in-the-background-in-the-isparta-region.jpg?b=1&s=612x612&w=0&k=20&c=DNVw0vRD4JXwKmuHQTjPfH6pYmb3CsCojrlkCoULT6E="
+          src={require("./img/1.jpg")}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -38,7 +42,7 @@ const CarouselBar = () => {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel>
   );
 };
