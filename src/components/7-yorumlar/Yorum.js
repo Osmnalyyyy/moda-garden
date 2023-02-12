@@ -1,7 +1,8 @@
-import React from "react";
-import { Card } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Card } from "react-bootstrap";
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 const Yorum = ({ name, point, message }) => {
+  const [cevap, setCevap] = useState("");
   let arr = [];
   if (!point) {
     for (let i = 1; i <= 10; i++) {
@@ -20,6 +21,7 @@ const Yorum = ({ name, point, message }) => {
       arr.push(<BsStar />);
     }
   }
+  const cevapver = () => {};
 
   return (
     <>
@@ -37,6 +39,8 @@ const Yorum = ({ name, point, message }) => {
             ))}
           </Card.Title>
           <Card.Text>{message}</Card.Text>
+          <Button onClick={() => cevapver()}>Yanıtla</Button>
+          <Card.Text></Card.Text>
         </Card.Body>
       </Card>
     </>
