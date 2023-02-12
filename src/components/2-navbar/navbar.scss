@@ -25,14 +25,16 @@
     }
   }
 }
-.gif {
-  list-style-type: none;
-  text-align: center;
-  transform: translateY(-150px);
-  // width: 200px;
-  img {
+.menu2 {
+  .gif {
+    list-style-type: none;
+    transform: translateY(-150px);
+    margin: 0 auto;
     width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
   }
 }

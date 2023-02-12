@@ -28,7 +28,12 @@ const Menu = () => {
           {menu.map((item) => (
             <SwiperSlide>
               <Card className="col-9 menucard">
-                <Card.Img className="h-50" variant="top" src={item.image} />
+                <Card.Img
+                  className="h-50"
+                  variant="top"
+                  height="200px"
+                  src={require(`./img/${item.image}`)}
+                />
                 <Card.Body>
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{item.desc}</Card.Text>

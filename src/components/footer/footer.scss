@@ -1,10 +1,17 @@
 .footer {
   margin-top: 1rem;
   background-color: aqua;
-  height: 20vh;
+  height: 10vh;
   text-align: center;
+}
+ul {
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-  .row {
-    align-items: center;
+  li {
+    list-style-type: none;
+    margin: auto 0;
   }
 }

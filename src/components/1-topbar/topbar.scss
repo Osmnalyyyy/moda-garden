@@ -1,17 +1,19 @@
 .topbar {
   display: flex;
   justify-content: space-between;
+
   background-color: rgb(243, 203, 71);
   align-items: center;
-
+  height: 10vh;
   .contact {
     display: flex;
     margin: 1rem;
     text-align: center;
     justify-content: center;
+
     li {
       margin-right: 2rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
   .icons {
@@ -22,11 +24,11 @@
     align-items: center;
     li {
       margin-left: 2rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
 
       &:hover {
         cursor: pointer;
-        transform: rotate(180deg);
+        transform: scale(2);
       }
     }
   }

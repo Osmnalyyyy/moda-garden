@@ -16,7 +16,7 @@ const Navbar = () => {
         </ul>
         <ul className="menu">
           <li>
-            <a href="">Hakkımızda</a>
+            <a href="">Yorumlar</a>
           </li>
           <li>
             <a href="">İletişim</a>

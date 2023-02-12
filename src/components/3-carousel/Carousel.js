@@ -4,7 +4,7 @@ import "./carousel.scss";
 import resim from "./img.json";
 const CarouselBar = () => {
   return (
-    <Carousel className="text-center slayt">
+    <Carousel className="text-center slayt container-fluid">
       {resim.map((img) => (
         <Carousel.Item interval={3000}>
           <img

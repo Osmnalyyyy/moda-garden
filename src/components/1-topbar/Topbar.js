@@ -30,7 +30,6 @@ const Topbar = () => {
           </li>
         </ul>
       </div>
-      <BsFillArrowUpCircleFill />
     </>
   );
 };

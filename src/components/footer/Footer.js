@@ -4,15 +4,15 @@ import { GrLocation } from "react-icons/gr";
 import "./footer.scss";
 const Footer = () => {
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col>
+    <div className="footer">
+      <ul>
+        <li>
           <GrLocation />
           Cami Mah Derya Sok 12/A 32500 Eğirdir/Isparta Türkiye
-        </Col>
-        <Col>Çalışma Saatleri: 09:00-01:00</Col>
-      </Row>
-    </Container>
+        </li>
+        <li>Çalışma Saatleri: 09:00-01:00</li>
+      </ul>
+    </div>
   );
 };
 
