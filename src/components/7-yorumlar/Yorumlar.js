@@ -4,6 +4,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import Yorum from "./Yorum";
 import yorumlar from "./yorum.json";
 import "./yorum.scss";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/pagination";
+import "swiper/css";
+
 const Yorumlar = () => {
   const [yorumDB, setYorumDB] = useState([]);
 
@@ -18,15 +23,41 @@ const Yorumlar = () => {
   }, [yorumDB]);
 
   return (
-    <Container className="text-center">
-      <Row className="m-0  yorum-grup">
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
         {yorumlar.map((yorum) => (
-          <Col className="col-3 yorum">
+          <SwiperSlide>
             <Yorum {...yorum} />
-          </Col>
+          </SwiperSlide>
         ))}
-      </Row>
-    </Container>
+      </Swiper>
+    </>
   );
 };
 
